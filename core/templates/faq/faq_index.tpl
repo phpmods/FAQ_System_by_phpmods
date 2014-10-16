@@ -49,6 +49,5 @@ foreach($allfaq as $faq) { ?>
 </table></center>
 <?php } } ?><center><a href="#" > Back to top </a></center>
 <?php } } ?>
-<?php
 <?php //Please do not remove the copyright notice below as it is part of the Creative Commons License which module is licensed under. Please consider buying me a coffee. FYI, coffee in Greece costs just 1€. My PayPal email address is geo.servetas@gmail.com. //  ?>
 <p align="right">Copyright &copy; <?php echo $year; ?> - <a href="http://php-mods.eu/" target="_blank"><font color="black">php-mods</font></a></p>
