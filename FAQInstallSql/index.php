@@ -1,9 +1,9 @@
 <?php
 ///////////////////////////////////////////////
-///      FAQSystem v1.1 by php-mods.eu      ///
+///      FAQSystem v1.2 by php-mods.eu      ///
 ///            Author php-mods.eu           ///
-///           Packed at 19/6/2014           ///
-///     Copyright (c) 2014, php-mods.eu     ///
+///           Packed at 6/12/2015           ///
+///     Copyright (c) 2015, php-mods.eu     ///
 ///////////////////////////////////////////////
 
 error_reporting(0);
@@ -11,13 +11,13 @@ error_reporting(0);
     if(Auth::LoggedIn())
             {
 	$email = 'info@php-mods.eu';
-	$subject = 'FAQ System v1.1 Installed';
-	$message = ''.SITE_NAME.' Installed FAQ System v1.1 Module URL '.SITE_URL.'';
+	$subject = 'FAQ System v1.2 Installed';
+	$message = ''.SITE_NAME.' Installed FAQ System v1.2 Module URL '.SITE_URL.'';
 
 	Util::SendEmail($email, $subject, $message);
                     if(PilotGroups::group_has_perm(Auth::$usergroups, ACCESS_ADMIN))
                     {
-                        echo '<h4>FAQ System v1.1 Installer for '.SITE_NAME.'</h4>';
+                        echo '<h4>FAQ System v1.2 Installer for '.SITE_NAME.'</h4>';
                     }
 					
              else
