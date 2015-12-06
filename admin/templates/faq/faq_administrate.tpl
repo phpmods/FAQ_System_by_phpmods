@@ -1,9 +1,9 @@
 <?php 
 ///////////////////////////////////////////////
-///      FAQSystem v1.1 by php-mods.eu      ///
+///      FAQSystem v1.2 by php-mods.eu      ///
 ///            Author php-mods.eu           ///
-///           Packed at 19/6/2014           ///
-///     Copyright (c) 2014, php-mods.eu     ///
+///           Packed at 6/12/2015           ///
+///     Copyright (c) 2015, php-mods.eu     ///
 ///////////////////////////////////////////////
 
 ?>
@@ -26,9 +26,7 @@ if(!$faqina)
 <tr>
 <td align="center"><?php echo $faq->title; ?></td>
 <td align="center"><?php echo $faq->text; ?></td>
-<td align="center">
-    <?php if($faq->active == '1'){echo '<font color="green"><b>Shown</b></font>';} 
-    else {echo '<font color="red"><b>Hidden</b></font>';} ?>
+<td align="center"><?php if($faq->active == 1){echo '<font color="green"><b>Shown</b></font>';} else {echo '<font color="red"><b>Hidden</b></font>';} ?>
 </td>
 <td align="center">
     <a href="<?php echo SITE_URL; ?>/admin/index.php/FAQ/faqedit/<?php echo $faq->id; ?>" class="button">Edit</a> 
