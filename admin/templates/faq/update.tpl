@@ -7,7 +7,7 @@
 ///////////////////////////////////////////////
 ?>
 <?php 
-$url = 'http://php-mods.eu/modules/versions/faq';
+$url = 'https://php-mods.eu/modules/versions/faq';
 $curl = curl_init();
 curl_setopt($curl, CURLOPT_URL, $url);
 curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
